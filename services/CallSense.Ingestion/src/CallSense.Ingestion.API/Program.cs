@@ -3,6 +3,7 @@ using CallSense.Ingestion.Application.Commands.UploadCall;
 using CallSense.Ingestion.Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using RabbitMQ.Client;
 
 // ── Builder Phase ────────────────────────────────────────────────────────────
 // WebApplication.CreateBuilder sets up the host, logging, and configuration
@@ -40,7 +41,14 @@ builder.Services.AddHealthChecks()
         name: "postgres",
         tags: ["ready"])
     .AddRabbitMQ(
-        rabbitConnectionString: builder.Configuration.GetConnectionString("RabbitMQ")!,
+        async _ =>
+        {
+            var factory = new ConnectionFactory
+            {
+                Uri = new Uri(builder.Configuration.GetConnectionString("RabbitMQ")!)
+            };
+            return await factory.CreateConnectionAsync();
+        },
         name: "rabbitmq",
         tags: ["ready"]);
 
