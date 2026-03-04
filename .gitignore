@@ -1,0 +1,48 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.userprefs
+
+## Build outputs
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+publish/
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## EF Core migrations (keep migrations, exclude snapshots if desired)
+# *.designer.cs  # uncomment to exclude migration designers
+
+## Secrets — never commit these
+appsettings.Production.json
+*secrets*.json
+.env
+*.pfx
+*.key
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## IDE
+.vscode/settings.json
+.idea/
+*.swp
+
+## Claude
+.claude/
+
+## Docker
+docker-compose.override.yml.bak

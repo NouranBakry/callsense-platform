@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/services/" />
+  <Folder Name="/services/CallSense.Ingestion/" />
+  <Folder Name="/services/CallSense.Ingestion/src/">
+    <Project Path="services/CallSense.Ingestion/src/CallSense.Ingestion.API/CallSense.Ingestion.API.csproj" />
+    <Project Path="services/CallSense.Ingestion/src/CallSense.Ingestion.Application/CallSense.Ingestion.Application.csproj" />
+    <Project Path="services/CallSense.Ingestion/src/CallSense.Ingestion.Domain/CallSense.Ingestion.Domain.csproj" />
+    <Project Path="services/CallSense.Ingestion/src/CallSense.Ingestion.Infrastructure/CallSense.Ingestion.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/services/CallSense.Ingestion/tests/">
+    <Project Path="services/CallSense.Ingestion/tests/CallSense.Ingestion.ArchitectureTests/CallSense.Ingestion.ArchitectureTests.csproj" />
+    <Project Path="services/CallSense.Ingestion/tests/CallSense.Ingestion.IntegrationTests/CallSense.Ingestion.IntegrationTests.csproj" />
+    <Project Path="services/CallSense.Ingestion/tests/CallSense.Ingestion.UnitTests/CallSense.Ingestion.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/shared/">
+    <Project Path="shared/CallSense.Contracts/CallSense.Contracts.csproj" />
+    <Project Path="shared/CallSense.Infrastructure.Shared/CallSense.Infrastructure.Shared.csproj" />
+    <Project Path="shared/CallSense.SharedKernel/CallSense.SharedKernel.csproj" />
+  </Folder>
+</Solution>
