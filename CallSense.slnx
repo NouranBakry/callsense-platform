@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/services/" />
+  <Folder Name="/services/CallSense.Analysis/" />
+  <Folder Name="/services/CallSense.Analysis/src/">
+    <Project Path="services/CallSense.Analysis/src/CallSense.Analysis.API/CallSense.Analysis.API.csproj" />
+    <Project Path="services/CallSense.Analysis/src/CallSense.Analysis.Application/CallSense.Analysis.Application.csproj" />
+    <Project Path="services/CallSense.Analysis/src/CallSense.Analysis.Domain/CallSense.Analysis.Domain.csproj" />
+    <Project Path="services/CallSense.Analysis/src/CallSense.Analysis.Infrastructure/CallSense.Analysis.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/services/CallSense.Intake/" />
+  <Folder Name="/services/CallSense.Intake/src/">
+    <Project Path="services/CallSense.Intake/src/CallSense.Intake.API/CallSense.Intake.API.csproj" />
+    <Project Path="services/CallSense.Intake/src/CallSense.Intake.Application/CallSense.Intake.Application.csproj" />
+    <Project Path="services/CallSense.Intake/src/CallSense.Intake.Domain/CallSense.Intake.Domain.csproj" />
+    <Project Path="services/CallSense.Intake/src/CallSense.Intake.Infrastructure/CallSense.Intake.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/shared/">
+    <Project Path="shared/CallSense.Contracts/CallSense.Contracts.csproj" />
+    <Project Path="shared/CallSense.Infrastructure.Shared/CallSense.Infrastructure.Shared.csproj" />
+    <Project Path="shared/CallSense.SharedKernel/CallSense.SharedKernel.csproj" />
+  </Folder>
+</Solution>
